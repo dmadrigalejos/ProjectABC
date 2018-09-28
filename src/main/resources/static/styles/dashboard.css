@@ -1,0 +1,35 @@
+.nv-axis.nv-x .tick line {
+  display:none !important;
+}
+
+.chart-title {
+  font-size: 22px;
+  color: #4c82c0;
+  margin: 0px 0 20px;
+}
+
+.nvd3 .nv-axislabel {
+	font-size: 16px;
+}
+
+.chart-excess .nvd3 .nv-axis.nv-x .tick text {
+	display: none;
+}
+
+.chart-few .nvd3 .nv-axis.nv-x .nv-axislabel {
+  display: none;
+}
+
+i.complete{
+    color:OliveGreen;
+}
+
+i.doing{
+    color:OrangeRed ;
+}
+
+i.na{
+    color:LightPink;    
+}
+
+

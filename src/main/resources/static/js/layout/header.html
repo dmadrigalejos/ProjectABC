@@ -1,0 +1,27 @@
+<nav class="navbar navbar-default">
+	<div>
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" style="margin: 25px"> Project ABC </a>
+			</div>
+			<ul class="nav navbar-nav nav-notifications">
+				<li>
+				    <a ui-sref="dashboard.logout"><i class="fa fa-sign-out"></i></a>
+			    </li>
+				<li class="dropdown dropdown-primarymenu">
+				    <a>{{user.userLastName}}, {{user.userFirstName}}</a>
+				</li>
+			</ul>
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<div id="navigation">
+				<div class="container">
+					<ul class="nav navbar-nav">
+						<li ui-sref-active="active"><a ui-sref="dashboard.home">Home</a></li>
+						<li ng-if="user.userAdmin"><a ui-sref="dashboard.users">Users</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>

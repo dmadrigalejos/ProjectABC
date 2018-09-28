@@ -1,0 +1,17 @@
+<div class="pull-left">
+    <div class="pagination">
+        <span ng-show="totalItems > itemsPerPage">Showing {{totalItems >= 1 ? (itemsPerPage * (ngModel - 1)) + 1 : 0}} to {{(itemsPerPage * (ngModel - 1)) + itemsPerPage > totalItems ? totalItems : (itemsPerPage * (ngModel - 1)) + itemsPerPage}} of </span> <span>{{totalItems}} {{(totalItems > 2) ? 'records' : 'record'}}</span>
+    </div>
+</div>
+<div class="pull-right" ng-hide="totalItems <= itemsPerPage">
+    <ul uib-pagination
+            ng-model="ngModel"
+            items-per-page="itemsPerPage"
+            max-size="maxSize"
+            total-items="totalItems"
+            class="pagination-md"
+            ng-change="ngChange"
+            boundary-links="true"
+            force-ellipses="true">
+    </ul>
+</div>

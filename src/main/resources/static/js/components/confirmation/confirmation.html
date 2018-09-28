@@ -1,0 +1,20 @@
+<div class="modal-content">
+    <div class="modal-header">
+        <button type="button" class="close" ng-click="$dismiss()">&times;</button>
+        <h3 class="modal-title">{{vmConfirmation.content.title}}</h3></div>
+    <div class="modal-body">
+        {{vmConfirmation.content.body}}
+    </div>
+    <div class="modal-footer">
+        <div class="form-group">
+            <div class="col-lg-offset-3">
+                <button type="reset" class="btn btn-default btn-half" ng-click="vmConfirmation.closeModal()"><i
+                        class="fa fa-ban" aria-hidden="true"></i> Cancel
+                </button>
+                <button type="submit" class="btn btn-primary btn-half" ng-click="vmConfirmation.confirm()"><i class="fa fa-check-circle-o" aria-hidden="true"></i>
+                    Confirm
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

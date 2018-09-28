@@ -1,0 +1,50 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>ABC</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="webjars/bootstrap/3.3.7/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="webjars/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+        <link rel="stylesheet" href="styles/dashboard.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/sb-admin-2.css">
+        <link rel="stylesheet" href="styles/navigation.css">
+        
+        <script src="webjars/jquery/3.3.1-1/jquery.min.js"></script>
+        <script src="webjars/jquery-ui/1.12.1/jquery-ui.min.js"></script>
+        <script src="webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="webjars/angular/1.6.9/angular.min.js"></script>
+        <script src="webjars/angular-ui-router/1.0.14/release/angular-ui-router.min.js"></script>
+        <script src="webjars/angular-ui-router/1.0.14/release/stateEvents.min.js"></script>
+        <script src="webjars/angular-messages/1.6.9/angular-messages.min.js"></script>
+        <script src="webjars/angular-filter/0.4.9/angular-filter.min.js"></script>
+        <script src="webjars/angular-ui-bootstrap/2.2.0/ui-bootstrap-tpls.min.js"></script>
+
+        <script src="js/app.js"></script>
+        <script src="js/components/alert/alert.service.js"></script>
+        <script src="js/components/alert/alert.directive.js"></script>
+        <script src="js/components/confirmation/confirmation.controller.js"></script>
+        <script src="js/components/pagination/pagination.directive.js"></script>
+        <script src="js/components/interceptors/notification.interceptor.js"></script>
+        <script src="js/components/validation/focus-first.directive.js"></script>
+        <script src="js/components/validation/validation.directive.js"></script>
+        <script src="js/layout/header.js"></script>
+        <script src="js/layout/footer.js"></script>
+        <script src="js/entities/login/login.controller.js"></script>
+        <script src="js/entities/login/logout.controller.js"></script>
+        <script src="js/entities/login/login.service.js"></script>
+        <script src="js/entities/home/home.controller.js"></script>        
+        <script src="js/entities/home/home.service.js"></script>
+        <script src="js/entities/users/users.controller.js"></script>
+        <script src="js/entities/users/users-new.controller.js"></script>
+        <script src="js/entities/users/users-edit.controller.js"></script>
+        <script src="js/entities/users/users.service.js"></script>
+        <script src="js/entities/users/users.state.js"></script>
+    </head>
+    <body ng-app="ABC">
+        <div id="main-container" ui-view></div>
+    </body>
+</html>

@@ -1,0 +1,7 @@
+<div class="alert-wrapper" ng-show="show" ng-animate="slide-top">
+	<div class="alert" ng-class="{'alert-dismissible': isDismissible, 'alert-success': alertType === 'success', 'alert-info': alertType === 'info', 'alert-warning': alertType === 'warning', 'alert-danger': alertType === 'error', 'show': show}">
+		<button type="button" class="close" ng-click="closeAlert()">×</button>
+		<h4 ng-hide="!title">{{title}}</h4>
+		<p>{{message}}</p>
+	</div>
+</div>
