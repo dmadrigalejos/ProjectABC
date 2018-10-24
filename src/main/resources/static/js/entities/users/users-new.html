@@ -46,6 +46,25 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="form-group col-lg-12">
+                                <label class="control-label col-sm-3">Birthday:</label>
+	                            <div class="col-sm-7">
+		                            <p class="input-group">
+		                                <input name="date"
+		                                    id="date"
+		                                    type="text"
+		                                    placeholder="{{ vm.date }}"
+		                                    class="form-control"
+		                                    uib-datepicker-popup="yyyy-MM-dd"
+		                                    ng-model="vm.date"
+		                                    is-open="vm.startOpened"
+		                                    readonly="true"/>
+		                               <span class="input-group-btn">
+		                                   <button type="button" class="btn btn-info btn-input" ng-click="vm.startOpened = true"><i class="glyphicon glyphicon-calendar"></i></button>
+		                               </span>
+		                            </p>
+		                        </div>
+	                        </div>
                         </div>
                     </div>
                     <div class="col-lg-12" align="left">

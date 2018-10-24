@@ -52,7 +52,7 @@
 	           	
 	            	if (result.data.userName == '') {
 	            		$state.go('login');
-	            	}else {
+	            	}else if ($rootScope.prevPage == 'login') {
 	                   $state.go('dashboard.home');
 	            	}
             	})
